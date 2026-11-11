@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesamiento de archivos CSV</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <h1>Procesamiento de archivos CSV</h1>
+
+        <p>
+            Aplicación web para cargar, visualizar,
+            filtrar y analizar archivos CSV.
+        </p>
+
+        <h2>1. Seleccionar archivo CSV</h2>
+
+        <input type="file" id="archivoCSV" accept=".csv">
+
+        <button id="btnCargar">
+            Cargar archivo
+        </button>
+
+        <h2>2. Datos del archivo</h2>
+
+        <div id="tablaContenedor">
+            <p>No se ha cargado ningún archivo.</p>
+        </div>
+
+        <h2>3. Filtrar información</h2>
+
+        <input type="text" id="filtro"
+               placeholder="Buscar información...">
+
+        <button id="btnFiltrar">
+            Filtrar
+        </button>
+
+        <h2>4. Estadísticas</h2>
+
+        <select id="columnaNumerica">
+            <option value="">Seleccionar columna</option>
+        </select>
+
+        <button id="btnCalcular">
+            Calcular estadísticas
+        </button>
+
+        <div id="resultados"></div>
+
+        <h2>5. Exportar resultados</h2>
+
+        <button id="btnDescargar">
+            Descargar TXT
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
